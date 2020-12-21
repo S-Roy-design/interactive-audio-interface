@@ -8,22 +8,58 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Welcome to my project</h1>
+    <!-- <img src="images/background.jpg" alt="A image of a valley" id="backgroundImage"> -->
+    <h1>To hear the birds</h1>
+    <h3>Click on a bird to hear it sing</h3>
+
 
 
     <audio src="audio/dove_call.mp3" id="doveAudio"></audio>
     <audio src="audio/duck_call.mp3" id="duckAudio"></audio>
 
 
-    <button id="play" class="playDisplay">▶️</button>
-    <button id="pause">⏸</button>
-    <button id="playOrPause">⏯ <img src="images/dove.jpg" alt="Image of a dove" class="doveImage"></button>
+    <!-- <button id="play" class="playDisplay">▶️</button>
+    <button id="pause">⏸</button> -->
+
+    
+    <button id="playOrPauseDove">⏯ <img src="images/dove.jpg" alt="Image of a dove" class="doveImage"></button>
+    <button id="playOrPauseDuck">⏯ <img src="images/duck.jpg" alt="Image of a duck" class="duckImage"></button>
 
 
     <!-- <div>
         <img src="images/dove.jpg" alt="Image of a dove" class="doveImage">
         <img src="images/duck.jpg" alt="Image of a duck" class="duckImage">
     </div> -->
+
+    <div class="controls">
+        <h2>To orchestrate a bird song; hit reset, then click on the birds in a sequence of your choice and hit play song</h2>
+        <button id="playMyNotes">PLAY SONG</button>
+        <button id="resetNotes">⏹</button>
+        <input type="range" value="500" min="500" max="2500" step="500" id="speedControlSong">
+        <div>
+            <span>🔉</span><input type="range" value="0.5" min="0" max="1" step="0.1" id="volumeControl">
+        </div>
+
+        <div>
+            <h3>Add some effects</h3>
+                <div>
+                    <input type="radio" id="waves" name="sound-effects" value="wave-effect">
+                    <label for="waves">Waves 🌊</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="breeze" name="sound-effects" value="breeze-effect">
+                    <label for="breeze">Gentle breeze and leaves 🍃</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="stadium" name="sound-effects" value="stadium-effect">
+                    <label for="stadium">Stadium 🏟</label>
+                  </div>
+                </div>
+        </div>
+    </div>
+
 
 
 

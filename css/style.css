@@ -1,10 +1,24 @@
 
+body {
+    background: url(/images/background.jpg);
+}
+/* 
 .pauseDisplay {
     display: inline;
+} */
+
+/* .playDisplay {
+    display: hidden;
+} */
+
+#playOrPauseDove {
+    width: auto;
+    background-color: aliceblue;    
 }
 
-.playDisplay {
-    display: hidden;
+#playOrPauseDuck {
+    width: auto;
+    background-color: paleturquoise;
 }
 
 .doveImage {
@@ -15,4 +29,8 @@
 .duckImage {
     width: 30%;
     border-radius: 1em;
+}
+
+.controls {
+    background-color: rgba(243, 207, 149, 0.563);
 }
